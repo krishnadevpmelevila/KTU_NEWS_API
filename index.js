@@ -3,7 +3,7 @@ const cheerio = require('cheerio');
 const axios = require('axios');
 
 const app = express();
-app.listen(5000, () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log('listening on port 5000');
 });
 const news = [];
